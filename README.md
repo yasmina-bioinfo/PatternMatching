@@ -1,6 +1,11 @@
-# Frist Mini_project — PatternMatching
-**Practice 1 in Bioinformatics Algorithms**  
-*(English / Français Versions)*  
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![Language](https://img.shields.io/badge/Language-Python-blue)
+![Field](https://img.shields.io/badge/Field-Bioinformatics-green)
+![Type](https://img.shields.io/badge/Mini--Project-PatternMatching-lightgrey)
+
+# Pattern Matching — Mini-Project 1
+**Bioinformatics Algorithms in Practice**  
+*(English / Français)*
 
 ---
 
