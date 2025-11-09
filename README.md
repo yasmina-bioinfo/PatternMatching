@@ -7,6 +7,10 @@
 **Bioinformatics Algorithms in Practice**  
 *(English / Français)*
 
+**Période / Period :** 2025-11-04 → 2025-11-05  
+**Durée approximative / Approx. duration :** 2 jours / 2 days  
+**Statut / Status :** Terminé ✅ / Completed ✅
+
 ---
 
 ## ENG Overview  
