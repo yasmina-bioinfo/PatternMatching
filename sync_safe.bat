@@ -1,5 +1,5 @@
 @echo off
-REM ====== Safe Git sync for Windows (no delayed expansion) ======
+REM ===== Safe Git sync for Windows (no delayed expansion) =====
 
 echo ===============================================
 echo Sync to GitHub...
@@ -29,11 +29,14 @@ if "%CHANGES%"=="0" (
 REM 4) Stage
 git add -A
 
-REM 5) Commit message (argument or date/time)
+REM 5) Commit message (no quotes required)
 set "MSG=%*"
 if "%~1"=="" set "MSG=Auto-update %date% %time%"
 
-REM Escape special characters for CMD
+REM Strip surrounding quotes if user pasted them
+if "%MSG:~0,1%"=="\"" if "%MSG:~-1%"=="\"" set "MSG=%MSG:~1,-1%"
+
+REM Escape special CMD chars
 set "MSG=%MSG:^=^^%"
 set "MSG=%MSG:&=^&%"
 set "MSG=%MSG:|=^|%"
@@ -51,7 +54,7 @@ if errorlevel 1 (
 REM 6) Push (first time or normal)
 git rev-parse --abbrev-ref --symbolic-full-name @{u} >NUL 2>&1
 if errorlevel 1 (
-  for /f %%b in ('git rev-parse --abbrev-ref HEAD') do set BRANCH=%%b
+  for /f %%b in ('git rev-parse --abbrev-ref HEAD') do set "BRANCH=%%b"
   if "%BRANCH%"=="" set "BRANCH=main"
   echo First push to origin %BRANCH%
   git push -u origin %BRANCH%
@@ -66,4 +69,6 @@ if errorlevel 1 (
 
 echo Done.
 :end
+REM Avoid PowerShell oddities; comment next line if you don't want pause
 pause
+exit /b 0
