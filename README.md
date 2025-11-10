@@ -7,8 +7,8 @@
 **Bioinformatics Algorithms in Practice**  
 *(English / Français)*
 
-**Période / Period :** 2025-11-04 → 2025-11-05  
-**Durée approximative / Approx. duration :** 2 jours / 2 days  
+**Période / Period :** 2025-11-04 → 2025-11-10  
+**Durée approximative / Approx. duration :** 7 jours / 7 days  
 **Statut / Status :** Terminé ✅ / Completed ✅
 
 ---
@@ -26,21 +26,18 @@ To understand how biological motif searches (such as promoter or restriction sit
 
 ### Example  
 ```python
-pattern = "ATG"
-genome  = "AATGCTATGCAATGC"
-positions = pattern_matching(pattern, genome)
+motifs = "ATG","CGA", "TTC", "TTT", "ATA"
+DNA  = "AATGCTATGCAATGC"
+positions = pattern_matching(motif, DNA)
 print(positions)
-```
-
-**Expected Output**  
-```
-Pattern 'ATG' found at positions: 1, 6, 11
 ```
 
 ### Files  
 - `pattern_matching.py` → core algorithm  
 - `results.csv` (optional) → exported results  
 - `README.md` → documentation  
+
+# Initially learned with AI guidance and Coursera courses — understanding functions, logic, required parameters, and coding methodology. Then, created the pattern_matching_Perso file as a personal practice exercise to apply these concepts.
 
 ---
 
@@ -58,15 +55,10 @@ Comprendre comment les outils bio-informatiques recherchent des motifs biologiqu
 
 ### Exemple  
 ```python
-pattern = "ATG"
-genome  = "AATGCTATGCAATGC"
-positions = pattern_matching(pattern, genome)
+motifs = "ATG","CGA", "TTC", "TTT", "ATA"
+DNA  = "AATGCTATGCAATGC"
+positions = pattern_matching(motif, DNA)
 print(positions)
-```
-
-**Résultat attendu**  
-```
-Motif 'ATG' trouvé aux positions : 1, 6, 11
 ```
 
 ### Fichiers  
@@ -74,5 +66,6 @@ Motif 'ATG' trouvé aux positions : 1, 6, 11
 - `results.csv` : export éventuel des résultats  
 - `README.md` : ce fichier explicatif  
 
+# J'ai d'abord appris avec l'IA et Coursera, les fonctions, leur logique, les paramètres à respecter, la méthodologie pour lancer le code. Ensuite, de là, j'ai retravaillé le code en créant un fichier pattern_matching_Perso en guise d'exercice d'application. 
 --- 
 > — Yasmina Soumahoro
