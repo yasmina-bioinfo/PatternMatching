@@ -67,5 +67,6 @@ print(positions)
 - `README.md` : ce fichier explicatif  
 
 # J'ai d'abord appris avec l'IA et Coursera, les fonctions, leur logique, les paramètres à respecter, la méthodologie pour lancer le code. Ensuite, de là, j'ai retravaillé le code en créant un fichier pattern_matching_Perso en guise d'exercice d'application. 
+# This work was initially completed in skew_array.py with support from AI tools and Coursera. I then reworked, analyzed, and tested the code in skew_array_PERSO.py as a hands-on practice exercise.
 --- 
 > — Yasmina Soumahoro
